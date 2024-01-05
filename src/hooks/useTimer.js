@@ -15,6 +15,9 @@ function useTimer() {
 
     return () => clearInterval(interval);
   }, [isActive]);
+
+  // New line below!
+  return [isActive, timer, setIsActive]; 
 }
 
 export default useTimer;
